@@ -11,8 +11,6 @@ const Room = () => {
     const navigate = useNavigate();
 
     const meeting = async (element) => {
-        // const appID = 794141203;
-        // const serverSecret = 'd9aa934bba1315a62c028768bf6c4893';
         const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomId, Date.now().toString(), " ");
 
         const zc = ZegoUIKitPrebuilt.create(kitToken);
